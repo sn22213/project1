@@ -1,0 +1,114 @@
+.saidbar {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+  border-right: solid 1px black;
+}
+
+.saidbar div:first-child,
+.saidbar div:last-child {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.saidbar .vertical-menu {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.saidbar .vertical-menu li {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  transform: rotateZ(180deg);
+}
+header {
+  display: flex;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 50px;
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  column-gap: 40px;
+}
+header nav div {
+  display: flex;
+  align-items: center;
+}
+header nav ul a {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(95, 94, 94);
+  /* opacity: ; */
+}
+header nav .right-menu {
+  display: flex;
+  column-gap: 50px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+footer .download {
+  display: flex;
+  /* column-gap: 15px; */
+}
+footer .download a {
+  display: inline-flex;
+}
+footer .page-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 70%;
+  overflow: hidden;
+  background: wheat;
+  opacity: 0.75;
+  border: none;
+}
+#cpanel .continer {
+  padding: 0 150px 0 150px;
+}
+#cpanel main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  height: 100%;
+}
+#cpanel main .aside1 {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .aside1 .btn1 {
+  padding: 10px;
+  border-radius: 50px;
+}
+main .aside2 {
+  display: grid;
+  justify-content: end;
+  align-items: center;
+}
+main .aside2 .btn2 {
+  padding: 10px;
+  border-radius: 50px;
+  width: 160px;
+}
+main .aside2 img {
+  border-radius: 20px;
+}
+.to-right {
+  display: grid;
+  justify-content: end;
+  align-items: flex-start;
+}
